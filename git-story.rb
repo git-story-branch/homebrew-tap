@@ -7,7 +7,7 @@ class GitStory < Formula
     sha256 "62a1e09a3fb7f24f4c633b2448902dc79cb4a78f0b06d35aa12878bf28c2df14"
   
     def install
-        bin.install "git-story"
+        bin.install "git-story-view"
     end
   
     test do

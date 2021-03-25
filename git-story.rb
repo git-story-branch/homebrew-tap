@@ -1,4 +1,4 @@
-class Gitstory < Formula
+class GitStory < Formula
     desc "Manage your code branches with story information from Pivotal Tracker"
     homepage "https://github.com/git-story-branch/git-story-branch"
     version "0.0.1"

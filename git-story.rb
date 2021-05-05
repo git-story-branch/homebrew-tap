@@ -1,10 +1,10 @@
 class GitStory < Formula
   desc "Manage your code branches with story information from Pivotal Tracker"
   homepage "https://github.com/git-story-branch/git-story-branch"
-  version "0.0.1"
+  version "0.0.2"
 
-  url "https://github.com/git-story-branch/git-story-branch/releases/download/v0.0.1/git-story-darwin-x64.tar.gz"
-  sha256 "62a1e09a3fb7f24f4c633b2448902dc79cb4a78f0b06d35aa12878bf28c2df14"
+  url "https://github.com/git-story-branch/git-story-branch/releases/download/v0.0.2/git-story-darwin-x64.tar.gz"
+  sha256 "6e16734f299c8c87c38be35d3c002b977e8ceac5b0ca65cca222b2591afba7c1"
 
   license "MIT"
 
@@ -12,9 +12,11 @@ class GitStory < Formula
 
   def install
     bin.install "git-story-view"
+    bin.install "git-story-open"
   end
 
   test do
     system "which #{bin}/git-story-view"
+    system "which #{bin}/git-story-open"
   end
 end

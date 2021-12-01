@@ -8,8 +8,6 @@ class GitStory < Formula
 
   license "MIT"
 
-  bottle :unneeded
-
   def install
     bin.install "git-story-view"
     bin.install "git-story-open"
